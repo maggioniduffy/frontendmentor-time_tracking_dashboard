@@ -1,0 +1,27 @@
+.outer-card {
+    background-color: var(--study);
+    border-radius: 10px;
+    height: 7.5rem;
+    margin: 1rem;
+    position: relative;
+}
+
+.inner-card {
+    background-color: var(--dark);
+    bottom: 0%;
+    color: white;
+    border-radius: 18px 18px 10px 10px;
+    display: flex;
+    height: 75%;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+}
+
+.main-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1rem;
+}
