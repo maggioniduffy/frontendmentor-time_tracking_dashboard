@@ -1,0 +1,42 @@
+.outer-profile-card {
+    align-items: flex-end;
+    background-color: var(--dark);
+    border-radius: 10px;
+    display: flex;
+    height: 9rem;
+    margin: 1.5rem;
+    position: relative;
+}
+
+.inner-profile-card {
+    background-color: var(--blue);
+    top: 0%;
+    color: white;
+    border-radius: 18px 18px 10px 10px;
+    display: flex;
+    height: 65%;
+    justify-content: space-between;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+}
+
+.options {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    position: absolute;
+    width: 100%;
+}
+
+button {
+    background-color: transparent;
+    border: 0px;
+    color: var(--light);
+    margin: 1rem;
+}
+
+button:focus {
+    color: white;
+}

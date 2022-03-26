@@ -1,9 +1,41 @@
 .outer-card {
-    background-color: var(--study);
     border-radius: 10px;
-    height: 7.5rem;
-    margin: 1rem;
+    height: 8rem;
+    margin: 1.5rem;
     position: relative;
+    background-position: right 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.study {
+    background-color: var(--study);
+    background-image: url('../../assets/images/icon-study.svg');
+}
+
+.work {
+    background-color: var(--work);
+    background-image: url('../../assets/images/icon-work.svg');
+}
+
+.play {
+    background-color: var(--play);
+    background-image: url('../../assets/images/icon-play.svg');
+}
+
+.exercise {
+    background-color: var(--exercise);
+    background-image: url('../../assets/images/icon-exercise.svg');
+}
+
+.social {
+    background-color: var(--social);
+    background-image: url('../../assets/images/icon-social.svg');
+}
+
+.self-care {
+    background-color: var(--self-care);
+    background-image: url('../../assets/images/icon-self-care.svg');
 }
 
 .inner-card {
@@ -13,6 +45,7 @@
     border-radius: 18px 18px 10px 10px;
     display: flex;
     height: 75%;
+    justify-content: space-between;
     text-align: center;
     position: absolute;
     width: 100%;
@@ -24,4 +57,22 @@
     flex-direction: column;
     justify-content: space-around;
     margin: 1rem;
+    text-align: left;
+}
+
+.secondary-info {
+    margin-top: 2rem;
+    position: absolute;
+    right: 5%;
+}
+
+.previous-hours {
+    font-size: 12px;
+    font-weight: 200;
+    text-align: right;
+}
+
+svg {
+    right: 0%;
+    position: absolute;
 }
