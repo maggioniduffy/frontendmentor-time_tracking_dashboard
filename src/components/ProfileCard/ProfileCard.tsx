@@ -17,7 +17,7 @@ const ProfileCard = ({ chooseTimeFrame, timeframe } : Props) => {
             </div>
             <div className="names">
                 <h5 className="light-font"> Report for </h5>
-                <h3 className="light-font"> Jeremy Robson </h3>
+                <h3 className="jeremy light-font"> Jeremy Robson </h3>
             </div>
         </div>
         <div className='options'>

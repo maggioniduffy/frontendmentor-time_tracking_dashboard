@@ -1,1 +1,36 @@
+@media(min-width: 1015px) {
+    .App {
+        display:flex; 
+        align-items: center; 
+        justify-content: center;
+    }
+    .container {
+        display: grid;
+        height: 100%;
+        grid-gap: 1rem;
+        grid-template-areas: 
+            "header one two three"
+            "header four five six";
+        grid-template-columns: repeat(4, minmax(auto,20rem));
+        margin-top: 10%;
+    }
+}
 
+@media(max-width: 1015px) and (min-width: 548px) {
+    .App {
+        display:flex; 
+        align-items: center; 
+        justify-content: center;
+    }
+    .container {
+        display: grid;
+        height: 100%;
+        grid-gap: 1rem;
+        grid-template-areas: 
+            "header header"
+            "one two"
+            "three four"
+            "five six";
+        grid-template-columns: repeat(2, minmax(auto,20rem));
+    }
+}

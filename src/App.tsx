@@ -29,12 +29,14 @@ function App() {
   const [timeFrame, setTimeFrame] = useState<Timeframe>('daily')
   return (
     <div className="App">
-      <ProfileCard timeframe={timeFrame} chooseTimeFrame={setTimeFrame} />
-      {activities.map((act) => {
-        return (
-          <ActivityCard activity={act} timeframe={timeFrame}/>
-        )
-      })}
+      <div className='container'>
+        <ProfileCard timeframe={timeFrame} chooseTimeFrame={setTimeFrame} />
+        {activities.map((act) => {
+          return (
+            <ActivityCard activity={act} timeframe={timeFrame}/>
+          )
+        })}
+      </div>
     </div>
   );
 }

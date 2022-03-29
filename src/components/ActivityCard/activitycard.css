@@ -51,6 +51,10 @@
     width: 100%;
 }
 
+.inner-card:hover {
+    background-color: var(--blue);
+}
+
 .main-info {
     position: relative;
     display: flex;
@@ -75,4 +79,24 @@
 svg {
     right: 0%;
     position: absolute;
+}
+
+@media(min-width: 1015px) { 
+    .time {
+        font-size: 3rem;
+    }
+    .outer-card {
+        height: auto;
+        position: relative;
+        background-position: right 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .previous-hours {
+        margin-top: 3.5rem;
+    }
+    .inner-card  {
+        flex-direction: column;
+    }
+    
 }

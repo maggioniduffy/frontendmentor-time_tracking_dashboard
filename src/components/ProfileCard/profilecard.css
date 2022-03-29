@@ -1,8 +1,8 @@
 .outer-profile-card {
-    align-items: flex-end;
     background-color: var(--dark);
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
     height: 9rem;
     margin: 1.5rem;
     position: relative;
@@ -23,12 +23,12 @@
 
 .options {
     align-items: center;
+    bottom: 0ch;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     margin: auto;
     position: absolute;
-    width: 80%;
+    width: 100%;
 }
 
 button {
@@ -68,4 +68,60 @@ button {
     margin-left: 1rem;
     text-align: left;
     width: 100%;
+}
+
+@media(min-width: 1015px) { 
+    .inner-profile-card {
+        flex-direction: column;
+    }
+    .outer-profile-card {
+        height: 27rem;
+        grid-area: header;
+    }
+    .options {
+        align-items: baseline;
+        flex-direction: column;
+        position: absolute;
+        width: auto;
+    }
+    .profile-pic {
+        border: solid;
+        border-color: white;
+        border-radius: 50%;
+        border-width: 2px;
+        display: block;
+        height: auto;
+        margin: 0rem;
+        width: 5rem;
+    }
+    .profile-pic-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 1rem;
+        width: 100%;
+    }
+    .jeremy {
+        font-size: 35px;
+    }
+    .names {
+        width: 70%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media(max-width: 1015px) and (min-width: 548px){ 
+    .outer-profile-card {
+        grid-area: header;
+    }
+    .profile-pic {
+        border: solid;
+        border-color: white;
+        border-radius: 50%;
+        border-width: 2px;
+        display: block;
+        height: 60%;
+        margin: auto;
+        width: 60%;
+    }
 }
